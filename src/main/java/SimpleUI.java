@@ -8,20 +8,9 @@ public class SimpleUI {
     public static void main(String[] args) {
     JFrame frame = new JFrame(gc); // Create a new JFrame
     frame.setSize(500,300);
+    frame.getContentPane().add(new ButtonPanel());
+    frame.setJMenuBar(new MainMenu());
     frame.setVisible(true);
-
-        JButton but1 = new JButton("Press me");
-        but1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-            }
-            
-
-
-        });
-
-
-
 
 // This next line closes the program when the frame is closed
     frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
